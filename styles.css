@@ -696,6 +696,8 @@ body {
     cursor: pointer;
     background-color: #000000;
     color: rgb(255, 255, 255); /* Changement de couleur pour contraste */
+    text-decoration: none;
+
   }
   
   .carte:hover .carte-face-avant {
@@ -3025,6 +3027,7 @@ body {
     text-align: center;
     box-shadow: 12px 12px 15px rgba(4,44,84, 0.7); /* Ombre subtile */
     width: 50%;
+    max-width: 100%;
     transition: background-color 0.3s ease, color 0.3s ease;
     text-decoration: none;
 }
