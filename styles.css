@@ -403,12 +403,12 @@ body {
     }
 
     .hero h1 {
-        font-size: 4.5vw; /* Taille réduite pour les tablettes */
+        font-size: 6vw; /* Taille réduite pour les tablettes */
         margin-top: 2vh; /* Remonte le titre */
     }
 
     .hero .subtitle {
-        font-size: 2.5vw; /* Taille réduite pour le sous-titre */
+        font-size: 3.5vw; /* Taille réduite pour le sous-titre */
         margin: 0 5vw; /* Marges réduites pour les tablettes */
         z-index: 1;
         position: relative; 
@@ -418,7 +418,7 @@ body {
 }
 
 /* Responsive design pour mobile */
-@media (max-width: 480px) {
+@media (max-width: 480px).5
   
     .logo img { 
         height: 4vh; /* 6% de la hauteur de la fenêtre */
@@ -545,9 +545,7 @@ body {
         margin-top: 18%; /* Ajuste le margin-top pour centrer le contenu */
     }
 
-    .hero h1 {
-        font-size: 4.5vw; /* Ajuste la taille du texte pour ces tablettes */
-    }
+   
 
     .hero .subtitle {
         font-size: 3vw; /* Ajuste la taille du sous-titre pour ces tablettes */
@@ -585,7 +583,7 @@ body {
     }
 
     .hero h1 {
-        font-size: 5vw; /* Taille réduite du titre */
+        font-size: 8vw; /* Taille réduite du titre */
         margin-top: -3vh; /* Ajustement de la marge supérieure */
     }
 
@@ -747,8 +745,8 @@ body {
   
   @media only screen and (max-width: 768px) {
     .carte {
-        width: 70vw;
-        height: 55vw;
+        width: 85vw;
+        height: 60vw;
       margin: 0 3vw; /* Ajuste l'espacement latéral pour les cartes sur les petits écrans */
     }
 
@@ -1628,7 +1626,7 @@ body {
     }
 
     .hero h1 {
-        font-size: 5vw; /* Taille ajustée pour les petits écrans */
+        font-size: 7vw; /* Taille ajustée pour les petits écrans */
         margin-top: 5%; /* Remonte le titre */
         
     }
@@ -1717,7 +1715,7 @@ body {
 .section-hero_2 {
     margin-top:9%;
     height: 75vh;
-    background-image: url('photo\ podcast.png');
+    background-image: url('youtube.png');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -1769,7 +1767,7 @@ body {
 /* Styles généraux pour l'animation */
 .slide-in-left {
     opacity: 0; /* Initialement invisible */
-    animation: slide-in-left 1s ease-out forwards; /* Animation fluide */
+    animation: slide-in-left 1.7s ease-out forwards; /* Animation fluide */
 }
 
 /* Styles pour l'overlay */
@@ -1854,8 +1852,9 @@ body {
 .section-hero_2 h1 {
     font-size: 6vw;
     color: #fff;
+    margin-top:30%;
     text-transform: uppercase;
-    letter-spacing: -0.05em;
+    letter-spacing: 0.05em;
     font-family: 'Roboto', Arial, Helvetica, sans-serif; /* Police moderne */
     text-shadow: 2px 22px 18px rgba(4,44,84); /* Ombre sur le texte */
     background-color: transparent; /* Fond transparent pour le titre */
@@ -1961,8 +1960,8 @@ body {
     .cta-button {
        
        
-        font-size: 2vw;
-        padding: 2vh 6vw;
+        font-size: 2.5vw;
+        padding: 1vh 6vw;
         width: 100%;
 
     }
