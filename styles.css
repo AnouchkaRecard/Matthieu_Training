@@ -412,13 +412,14 @@ body {
         margin: 0 5vw; /* Marges réduites pour les tablettes */
         z-index: 1;
         position: relative; 
+        margin-bottom:-5%;
     }
 
  
 }
 
 /* Responsive design pour mobile */
-@media (max-width: 480px).5
+@media (max-width: 480px) {
   
     .logo img { 
         height: 4vh; /* 6% de la hauteur de la fenêtre */
@@ -1040,7 +1041,16 @@ body {
   
   /* Adaptation pour mobiles */
   @media only screen and (max-width: 768px) {
-    
+    .bouton-arriere {
+        font-size: 2.5vw;
+        padding: 3vw 2vw;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        background-color: #000000;
+        color: rgb(255, 255, 255); /* Changement de couleur pour contraste */
+      }
+      
     .texte-principal {
         font-size: 10vw;
         margin-top: -10%;
@@ -1941,7 +1951,7 @@ body {
     .text-background p {
         font-size: 4vw;
     }
-
+   
     .cta-button_2 {
        
         margin-top: 10%;
@@ -2009,12 +2019,13 @@ body {
         padding: 2vh 5vw;
         width: 80%;
 
-    }.cta-button {
-        margin-top:0%;
+    }.cta-button { /*tablette */
+        margin-top:-15%;
 
-        font-size: 2.5vw;
-        padding: 1vh 5vw;
+        font-size: 3vw;
+        padding: 1vh 3vw;
         width: 100%;
+        
 
     }
     
