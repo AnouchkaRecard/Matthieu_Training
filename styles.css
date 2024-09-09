@@ -112,10 +112,13 @@ body {
 
 /* Responsive design pour tablette et mobile */
 @media (max-width: 768px) {
+
+   
     
     .menu-toggle {
         display: block;
     }
+   
     .navbar ul {
         display: none; /* Caché par défaut en mode hamburger */
         flex-direction: column;
@@ -420,6 +423,8 @@ body {
 
 /* Responsive design pour mobile */
 @media (max-width: 480px) {
+
+  
   
     .logo img { 
         height: 4vh; /* 6% de la hauteur de la fenêtre */
@@ -707,6 +712,12 @@ body {
       height: 30vw;
     }
 
+    .discover-button {
+        font-size: 1em;
+        padding: 2em 1em;
+
+
+    }
  
     
    
@@ -1041,6 +1052,14 @@ body {
   
   /* Adaptation pour mobiles */
   @media only screen and (max-width: 768px) {
+
+    .discover-button {
+        font-size: 1em;
+        padding: 2em 1em;
+
+
+    }
+ 
     .bouton-arriere {
         font-size: 2.5vw;
         padding: 3vw 2vw;
@@ -1418,6 +1437,7 @@ body {
         padding: 1.5vh 4vw;
         margin-top:-15%;
     }
+    
 
     .cta-button_politiques {
         font-size: 1.5vw; /* Ajuste la taille du texte du bouton pour ces tablettes */
@@ -1904,6 +1924,7 @@ body {
     font-weight: bold;
 }
 
+
 .cta-button_2:hover {
     background-image: linear-gradient(45deg, #FF7F50, #FF4500); /* Dégradé sur hover */
     transform: scale(1.05); /* Effet de zoom */
@@ -1937,7 +1958,7 @@ body {
     .section-hero h1 {
         font-size: 10vw;
     }
-
+    
     .section-hero_4 h1 {
         font-size: 10vw;
     }
@@ -1984,6 +2005,8 @@ body {
         margin-bottom: 3%;
     }
 
+    
+
     .section-hero_4 h1 {
         font-size: 12vw;
         margin-bottom: 3%;
@@ -2028,6 +2051,8 @@ body {
         
 
     }
+
+ 
     
 }
 
@@ -2087,6 +2112,7 @@ body {
     .bloc {
         width: 45%;
     }
+    
 }
 
 @media (max-width: 768px) {
@@ -2094,7 +2120,7 @@ body {
         width: 100%;
         margin-bottom: 20px;
     }
-
+    
   
 
     
@@ -2738,12 +2764,7 @@ body {
    
     
     
-    .discover-button {
-        font-size: 1em;
-        padding: 2em 1em;
 
-
-    }
     
    
     .playlist-title,.planification-sportive h2, .accompagnement h2, .livre-podcast-section h1, .section-title {
@@ -2777,11 +2798,7 @@ body {
    
 
     
-      .discover-button {
-        font-size: 1em;
-        padding: 2em 1em;
-
-    }
+     
     .contact-section {
         padding: 5vh 4vw; /* Padding plus réduit pour mobiles */
         margin: 0 auto;
@@ -2995,7 +3012,7 @@ body {
     cursor: pointer;
     text-align: center;
     box-shadow: 12px 12px 15px rgba(4,44,84, 0.7); /* Ombre subtile */
-    width: 30%;
+    width: 50%;
     transition: background-color 0.3s ease, color 0.3s ease;
     text-decoration: none;
 }
