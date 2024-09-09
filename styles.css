@@ -1664,6 +1664,7 @@ body {
         font-size: 2em;
     }
 
+ 
 
 
    
@@ -1955,6 +1956,8 @@ body {
 
 /* Styles pour mobile */
 @media (max-width: 767px) {
+
+    
     .section-hero h1 {
         font-size: 10vw;
     }
@@ -2326,6 +2329,7 @@ body {
 
 /* Styles pour les petits écrans (mobiles) */
 @media (max-width: 767px) {
+    
     .why-choose-section {
         background-color: #f4f4f4;
         text-align: center;
@@ -2776,6 +2780,14 @@ body {
 
 /* Mobiles */
 @media (max-width: 767px) {
+
+    .discover-button {
+        font-size: 0.8em;
+        padding: 2em 1em;
+
+
+    }
+
     .youtube-container iframe {
         height: 250px;
     }
