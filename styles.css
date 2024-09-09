@@ -1754,6 +1754,11 @@ body {
     background: linear-gradient(transparent, #f2f2f2); /* Gradient transparent vers la section suivante */
 }
 
+
+.section-hero_4.scrolled {
+    transform: translateY(10%); /* Légère translation vers le bas */
+}
+
 .section-hero_4 { /* ANIMATION CONTACT */
     margin-top:9%;
     height: 75vh;
@@ -1765,8 +1770,14 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-attachment: fixed; /* Fixe l'image de fond pour l'effet parallax */
+
+    animation: fadeIn 1.5s ease-in-out;
+    
+
     
 }
+
 
 .section-hero_2.scrolled {
     transform: translateY(10%); /* Légère translation vers le bas */
