@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suivi Personnalisé - Matthieu Training</title>
+    <!-- Lien vers la librairie Slick -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="CHALLENGERS.png" alt="Logo du site">
+        </div>
+        <div class="menu-toggle" id="menu-toggle">
+            &#9776; <!-- Symbole pour le menu hamburger -->
+        </div>
+        <nav class="navbar" id="navbar">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="suivi-personnalisé.html">Suivi personnalisé</a></li>
+                <li><a href="podcast.html">Podcast</a></li>
+                <li><a href="livre-routine-dechauffement.html">Livre</a></li>
+                <li><a href="contact-matthieu-training.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <!-- Section avec l'image de fond, le texte, et le bouton -->
+    <section class="section-hero">
+        <div class="overlay">
+            <h1>SUIVI PERSONNALISÉ</h1>
+            <div class="text-background">
+                <p>Tu mérites un plan d'entraînement axé sur l'humain parce que toi, c'est plus qu'un programme !
+                </p>
+            </div>
+            <a href="https://calendly.com/matthieu-andreux/prise-de-rendez-vous-challenger" class="cta-button_2" style=" text-transform: uppercase"> Réserve ton suivi</a>
+        </div>
+    </section>
+    <section class="planification-sportive">
+        <h2>PLANIFICATION SPORTIVE</h2>
+        <div class="blocs-container">
+            <div class="bloc">
+                <h1>Programme Adapté :
+
+                </h1>
+                <p>Un programme personnalisé en fonction de tes disponibilités et tes objectifs, le tout sur une application utilisée par les plus grands athlètes.</p>
+            </div>
+            <div class="bloc">
+                <h1>Séances Variées :</h1>
+                <p>Des séances de course à pied, de vélo, de natation et de musculation adaptées à ton profil pour te permettre de progresser de manière efficace</p>
+            </div>
+            <div class="bloc">
+                <h1>Évaluation Continue :
+
+                </h1>
+                <p>Tests et profilage athlétique tous les deux mois pour mesurer et optimiser ton évolution.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    
+    <style>/* Styles de la section */
+        .animated-section {
+            opacity: 0; /* Initialement caché */
+            transform: translateY(30px); /* Initialement décalé vers le bas */
+            transition: opacity 0.6s ease, transform 0.6s ease; /* Animation fluide */
+        }
+        
+        /* Styles du séparateur */
+        .separator {
+            height: 15px; /* Hauteur du séparateur */
+            background-color: #ec5504; /* Couleur de fond */
+            position: relative;
+            margin: 40px 0; /* Espace autour du séparateur */
+            overflow: hidden; /* Cache le contenu qui dépasse */
+            width: 0; /* Initialement non visible */
+            transition: width 1s ease; /* Animation d'expansion */
+        }
+        
+        .separator::before {
+            content: "";
+            position: absolute;
+            left: 10%;
+            width: 80%;
+            height: 100%;
+            background-color: #f5f5f5; /* Couleur de fond secondaire */
+            transform: skew(-20deg);
+            z-index: 1;
+        }
+        
+        /* Styles lorsque la section est visible */
+        .animated-section.visible {
+            opacity: 1; /* Affiche la section */
+            transform: translateY(0); /* Ramène la section à sa position normale */
+        }
+        
+        /* Styles lorsque le séparateur est visible */
+        .separator.visible {
+            width: 100%; /* La barre se déploie entièrement */
+        }
+        
+        /* Style pour les écrans de bureau */
+        @media (min-width: 1024px) {
+            .button-container {
+                display: flex;
+                justify-content: center;
+                gap: 20px; /* Espace entre les boutons */
+            }
+            
+            .elementor-button-wrapper {
+                margin-bottom: 0; /* Réinitialiser la marge inférieure sur les écrans de bureau */
+            }
+        }
+        
+        /* Style par défaut (mobile) */
+        .elementor-button-wrapper {
+            margin-top: 7%; /* Marge plus grande pour les mobiles */
+        }
+        </style>
+    
+        <!-- Séparateur -->
+    <div class="separator"></div>
+
+    <section class="why-choose-section">
+        <h1 class="section-title">POURQUOI CHOISIR LE SUIVI PERSONNALISÉ</h1>
+        <div class="content">
+            <div class="image-container">
+                <img src="photo téléphone application suivi perso.png" alt="Photo illustrant le suivi personnalisé">
+            </div>
+            <div class="text-container">
+                <ul align="justify">
+                    <h3>Écosystème Complet - Accède à une méthode unique avec des conseils et des experts à ta disposition :</h3>
+                    <li>Conférences et formation vidéo.</li>
+                    <li>Réponses aux questions fréquentes, conseils et astuces pour des résultats optimaux</li>
+                    <li>Sessions Q&A en visioconférence toutes les deux semaines.</li>
+                    <li>Communauté forte via un groupe WhatsApp pour échanger et célébrer nos succès.</li>
+                </ul>
+                <br>
+                <ul align="justify">
+                    <h3>Accompagnement Premium :</h3>
+                    <li>Chat avec ton coach sur WhatsApp 6j/7 et appel mensuel pour échanger sur tes progrès et ajuster ton entraînement.</li>
+                </ul>
+                <br>
+                <ul align="justify">
+                    <h3>Une méthode unique avec des conseils et des experts :</h3>
+                    <li>Conférences toutes les deux semaines, formation vidéo, master class exclusive.</li>
+                    <li>Une séance de groupe en présentiel par semaine.</li>
+                    <li>Communauté forte via un groupe WhatsApp pour échanger et célébrer nos succès.</li>
+                </ul>
+            </div>
+            
+        </div>
+    </section>
+
+    <div class="alert-section">
+        <div class="alert-text">
+            <h2>Places limitées pour garantir un suivi de qualité</h2>
+        </div>
+    </div>
+    
+    <section class="joined-us-section">
+        <h2 class="section-title">ILS NOUS ONT REJOINS</h2>
+        <div class="joined-us-images">
+            <div class="joined-us-image-item">
+                <img src="avis1.png" alt="Avis 1">
+            </div>
+            <div class="joined-us-image-item">
+                <img src="avis2.png" alt="Avis 2">
+            </div>
+            <div class="joined-us-image-item">
+                <img src="avis3.png" alt="Avis 3">
+            </div>
+        </div>
+    </section>
+</main>
+<style>
+    
+</style>
+<section class="contact-section" style="margin-top:1.8%;">
+    <div class="contact-container" style=" line-height: 15pt">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <p><strong>Nom :</strong> Matthieu Andreux </p>
+            <p><strong>Email :</strong> <a href=" matthieu.andreux@dynamiquestep.com"> matthieu.andreux@dynamiquestep.com </a></p>
+            <p><strong>Téléphone :</strong> +33 6.83.96.49.56</p>
+            <p>Lyon, France</p>
+        </div> 
+
+        <div class="legal-container" style=" line-height: 15pt"><br><br>
+            <p align="center"><strong>Mentions Légales</strong></p>
+            <p> © 2024 Votre Entreprise. Tous droits réservés.<br>
+                <a href="politiques.html">Politique de Confidentialité</a><br>
+            <a href="conditions-dutilisation.html">Conditions d'Utilisation</a>
+    </div>
+</section>
+<!-- Importation de jQuery et Slick.js -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="script.js"></script>
+    
+
+    <script>document.addEventListener('DOMContentLoaded', function() {
+        const separator = document.querySelector('.separator');
+    
+        function checkVisibility() {
+            const rect = separator.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+    
+            // Vérifie si le séparateur est partiellement dans la vue
+            if (rect.top < windowHeight && rect.bottom > 0) {
+                separator.classList.add('visible');
+            } else {
+                separator.classList.remove('visible');
+            }
+        }
+    
+        // Appelle la fonction lors du chargement initial
+        checkVisibility();
+    
+        // Appelle la fonction lors du défilement
+        window.addEventListener('scroll', checkVisibility);
+    });
+    
+    
+    </script>
+</body>
+</html>
