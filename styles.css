@@ -819,6 +819,16 @@ body {
     margin: 0;
     padding: 0;
 }
+.nouvelle-section::after { /*ANIMATION AVENTURE HUMAINE */
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5vh; /* Taille ajustable selon le rendu souhaité */
+    background: linear-gradient(transparent, #f2f2f2); /* Gradient transparent vers la section suivante */
+}
+
 
 .image-fond {
     background-image: url('photoaventurehumaine.JPG'); /* Remplacez par le chemin de votre image */
@@ -1717,6 +1727,7 @@ body {
     align-items: center;
     text-align: center;
     animation: fadeIn 1.5s ease-in-out;
+    
 }
 .section-hero_3 {
     margin-top:9%;
@@ -1730,8 +1741,20 @@ body {
     align-items: center;
     text-align: center;
     animation: fadeIn 1.5s ease-in-out;
+
 }
-.section-hero_4 {
+
+.section-hero_3::after { /*ANIMATION LIVRE */
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5vh; /* Taille ajustable selon le rendu souhaité */
+    background: linear-gradient(transparent, #f2f2f2); /* Gradient transparent vers la section suivante */
+}
+
+.section-hero_4 { /* ANIMATION CONTACT */
     margin-top:9%;
     height: 75vh;
     background-image: url('photo\ contact.jpg');
@@ -1743,13 +1766,27 @@ body {
     align-items: center;
     text-align: center;
     animation: fadeIn 1.5s ease-in-out;
+    animation: zoomBackground 5s ease-in-out infinite; /* Effet de zoom */
 }
 
-.section-hero_2 {
-    margin-top:9%;
+@keyframes zoomBackground {
+    0% {
+        background-size: 100%;
+    }
+    50% {
+        background-size: 105%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
+.section-hero_2 { /*Animation podcast*/
+    margin-top: 9%;
     height: 75vh;
     background-image: url('youtube.png');
     background-size: cover;
+    background-attachment: fixed; /* Fixe l'image de fond pour l'effet parallax */
     background-position: center;
     position: relative;
     display: flex;
@@ -1757,6 +1794,15 @@ body {
     align-items: center;
     text-align: center;
     animation: fadeIn 1.5s ease-in-out;
+}
+
+.section-next {
+    height: 100vh;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 /* Overlay pour assombrir l'image */
