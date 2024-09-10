@@ -2220,7 +2220,7 @@ body {
 
 /* Styles pour les mobiles */
 @media (max-width: 767px) {
-    .content_1 h4 {font-size: 0.75em;}
+    .content_1 h4 {font-size: 0.7em;}
     .square-image {
         width: 15vw; /* Ajuste la taille de l'image pour ces tablettes */
         height: auto;
