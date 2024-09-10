@@ -7,12 +7,17 @@
 
 /* Body & general settings */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Police pour le texte principal */
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
     overflow-x: hidden;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif; /* Police pour les titres */
+    letter-spacing: 1px; /* Espacement pour aérer les titres */
+  }
 /* Animations */
 @keyframes fadeIn {
     from {
@@ -2457,7 +2462,6 @@ body {
     color: #fff;
     text-transform: uppercase;
     letter-spacing: -0.05em;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif; /* Police moderne */
     text-shadow: 2px 22px 18px rgba(4,44,84); /* Ombre sur le texte */
     background-color: transparent; /* Fond transparent pour le titre */
     animation: slideInFromLeft 1.5s ease-out;
@@ -2469,7 +2473,6 @@ body {
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 0.5em;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif; /* Police moderne */
     text-shadow: 2px 22px 18px rgba(4,44,84); /* Ombre sur le texte */
     background-color: transparent; /* Fond transparent pour le titre */
     animation: slideInFromLeft 2s ease-out;
@@ -2482,7 +2485,6 @@ body {
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif; /* Police moderne */
     text-shadow: 2px 22px 18px rgba(4,44,84); /* Ombre sur le texte */
     background-color: transparent; /* Fond transparent pour le titre */
     animation: slideInFromLeft 2s ease-out;
@@ -2496,7 +2498,6 @@ body {
     margin-top:30%;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif; /* Police moderne */
     text-shadow: 2px 22px 18px rgba(4,44,84); /* Ombre sur le texte */
     background-color: transparent; /* Fond transparent pour le titre */
     animation: slideInFromLeft 2s ease-out;
@@ -3032,9 +3033,12 @@ body {
 /* Effet d'animation sur le texte */
 .alert-text {
     text-align: center;
-    font-size: 1rem; /* Taille du texte */
+    font-size: 1.2rem; /* Taille du texte */
     font-weight: bold; /* Texte en gras */
     animation: pulse 2s infinite; /* Animation de pulsation */
+    font-family: sans-serif; /* Police pour le texte principal */
+    line-height: 1.6;
+
     letter-spacing: 0.3rem; /* Espacement des lettres */
     text-transform: uppercase; /* Met le texte en majuscules */
 
@@ -3087,7 +3091,7 @@ body {
     }
 
     .alert-text {
-        font-size: 0.6rem; /* Réduit la taille de la police pour les petits écrans */
+        font-size: 0.7rem; /* Réduit la taille de la police pour les petits écrans */
         letter-spacing: 0.2rem; /* Ajuste l'espacement des lettres pour les petits écrans */
         text-transform: uppercase; /* Met le texte en majuscules */
     }
