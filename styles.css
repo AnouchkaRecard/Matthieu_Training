@@ -2405,7 +2405,7 @@ body {
     width: 55%; /* Limite la largeur maximale pour les grands écrans */
     height:auto;
     font-size:0.9em;
-    box-shadow: 4px 4px 8px rgba(4, 44, 84, 0.8); /* Ombre */
+    box-shadow: 12px 12px 15px rgba(4, 44, 84, 0.7); /* Ombre subtile */
 
 }
 
@@ -2827,6 +2827,8 @@ body {
     opacity: 0; /* Initialement invisible */
     transform: translateY(20px); /* Position légèrement décalée */
     transition: opacity 1s ease-out 0.5s, transform 1s ease-out 0.5s; /* Animation avec un délai */
+    box-shadow: 12px 12px 15px rgba(4, 44, 84, 0.7); /* Ombre subtile */
+
 }
 
 .text-block_1 {
