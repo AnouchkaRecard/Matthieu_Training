@@ -1636,10 +1636,12 @@ body {
 /*CONTACT SECTION */
 .contact-section {
     padding: 8vh 5vw; /* Unités relatives pour le padding */
-    background: #f4f4f4;
-    border-top: 1px solid #ddd;
+    background: rgb(3, 26, 50);
+    border-top: 5px solid #ff5900;
     transition: background 0.3s ease;
     line-height: 1.5em; /* Meilleur espacement du texte */
+    box-shadow: 54px 4px 10px rgba(0, 0, 0, 0.1), -4px -4px 10px rgba(255, 255, 255, 0.8); /* Ombres portées */
+
 }
 
 /* Styles pour les écrans larges */
@@ -1665,18 +1667,18 @@ body {
 .contact-container h2 {
     font-size: 2.2vw; /* Utilise des unités relatives pour la taille du texte */
     margin-bottom: 4vh;
-    color: #333;
+    background: linear-gradient(1deg,rgba(255, 49, 49, 1),rgba(255, 145, 77)  );
+    -webkit-background-clip: text; /* Appliquer le dégradé au texte */
+    -webkit-text-fill-color: transparent; /* Masquer la couleur de texte d'origine */
     text-align: center;
-    transition: color 0.3s ease;
+    transition: background 0.3s ease; /* Transition sur le dégradé */
 }
 
-.contact-container h2:hover {
-    color: #007BFF;
-}
+
 
 .contact-info {
     font-size: 1.8vw; /* Taille du texte relative pour les écrans PC */
-    color: #555;
+    color: #ffffff;
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
@@ -1687,31 +1689,35 @@ body {
 }
 
 .contact-info a {
-    color: #007BFF;
+    background: linear-gradient(1deg,rgba(255, 49, 49, 1),rgba(255, 145, 77)  );
+    -webkit-background-clip: text; /* Appliquer le dégradé au texte */
+    -webkit-text-fill-color: transparent; /* Masquer la couleur de texte d'origine */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .contact-info a:hover {
-    color: #0056b3;
+    color: #ff9100;
 }
 
 /* Section Mentions Légales */
 .legal-container p {
     font-size: 1.5vw; /* Texte relatif */
-    color: #555;
+    color: #dcdbdb;
     text-align: center;
     line-height: 1.8em;
 }
 
 .legal-container a {
-    color: #007BFF;
+    background: linear-gradient(1deg,rgba(255, 49, 49, 1),rgba(255, 145, 77)  );
+    -webkit-background-clip: text; /* Appliquer le dégradé au texte */
+    -webkit-text-fill-color: transparent; /* Masquer la couleur de texte d'origine */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .legal-container a:hover {
-    color: #0056b3;
+    color: #ff9100;
 }
 
 /* Styles pour les tablettes (768px à 1024px) */
@@ -2028,6 +2034,7 @@ body {
     text-shadow: 2px 22px 18px rgba(4,44,84); /* Ombre sur le texte */
     background-color: transparent; /* Fond transparent pour le titre */
     animation: slideInFromLeft 2s ease-out;
+    
 
 }
 
@@ -2834,6 +2841,8 @@ body {
     opacity: 0; /* Initialement invisible */
     transform: translateY(20px); /* Position légèrement décalée */
     transition: opacity 1s ease-out 0.5s, transform 1s ease-out 0.5s; /* Animation avec un délai */
+    box-shadow: 2px 22px 18px rgba(4,44,84,0.7); /* Ombre sur le texte */
+
 }
 
 .politiques_1 {
