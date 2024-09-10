@@ -842,7 +842,6 @@ body {
     top: 0;
     left: 0;
     opacity: 100%;
-    filter: hue-rotate(150deg);
     
 }
 
@@ -860,7 +859,7 @@ body {
   border-radius: 16px;
   width: 360px;
   height: 360px;
-  background: url(https://picsum.photos/360/360?image=0);
+  background: url(test1.jpg);
   position: relative;
   overflow: hidden;
   box-shadow: 0 5px 50px rgba(0, 0, 0, 0.85);
@@ -887,7 +886,7 @@ body {
 .img span {
     width: 25%;
     height: 100%;
-    background: url(https://picsum.photos/360/360?image=0);
+    background: url(test.jpg); /*IMAGE DES AVIS ICI*/
     transition: 0.5s;
     display: flex; /* Utilisation de Flexbox */
     justify-content: center; /* Centrage horizontal */
@@ -952,6 +951,9 @@ body {
  0px 0px 20px rgba(4,44,84, 0.5); /* Effet lumineux autour du texte */
     
   }
+
+
+
 
 
     
