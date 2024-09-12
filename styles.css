@@ -299,12 +299,12 @@ h1, h2, h3, h4, h5, h6 {
     text-shadow: 0.2vw 0.2vw 0.5vw black; /* Ombre noire pour le texte */
     z-index: 2; /* Assure que le sous-titre est au-dessus du carrousel */
     position: relative; 
-    color: rgb(4,44,84); /* Couleur du texte en rouge */
+    color: rgb(255, 255, 255); /* Couleur du texte en rouge */
 
     text-transform: uppercase; /* Met le texte en majuscules */
     text-shadow: 
-    1px 1px 0px rgb(253, 253, 253),   /* Ombre de base pour un léger relief */
-    2px 2px 0px rgb(253, 253, 253),   /* Ombre supplémentaire pour plus de profondeur */
+    1px 1px 0px rgb(0, 0, 0),   /* Ombre de base pour un léger relief */
+    2px 2px 0px rgb(0, 0, 0),   /* Ombre supplémentaire pour plus de profondeur */
     3px 3px 5px rgba(4,44,84, 0.7), /* Ombre floue pour l'effet 3D */
     0px 0px 20px rgba(255, 255, 255, 0.5); /* Effet lumineux autour du texte */
     
