@@ -414,16 +414,16 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .hero h1 {
-        font-size: 6vw; /* Taille réduite pour les tablettes */
+        font-size: 9vw; /* Taille réduite pour les tablettes */
         margin-top: 2vh; /* Remonte le titre */
     }
 
     .hero .subtitle {
         font-size: 3.5vw; /* Taille réduite pour le sous-titre */
-        margin: 0 5vw; /* Marges réduites pour les tablettes */
+        margin: 0 0vw; /* Marges réduites pour les tablettes */
         z-index: 1;
         position: relative; 
-        margin-bottom:-5%;
+        margin-bottom:-5%; /
     }
 
  
@@ -456,13 +456,7 @@ h1, h2, h3, h4, h5, h6 {
 
    
 
-    .hero .subtitle {
-        font-size: 4vw; /* Taille plus grande pour le sous-titre */
-        margin: 0 0vw; /* Marges plus grandes à gauche et à droite */
-        z-index: 1;
-        position: relative; 
-        margin-bottom:-5%;
-    }
+   
 
   
 }
@@ -2270,13 +2264,21 @@ h1, h2, h3, h4, h5, h6 {
 /* Styles pour les mobiles */
 @media (max-width: 767px) {
     .square-image {
-        width: 15vw; /* Ajuste la taille de l'image pour ces tablettes */
+        width: 20vw; /* Ajuste la taille de l'image pour ces tablettes */
         height: auto;
         margin-top:-8%;
     }
+    
+    .hero .subtitle {
+        font-size: 3vw; /* Taille plus grande pour le sous-titre */
+        margin: 0 0vw; /* Marges plus grandes à gauche et à droite */
+        z-index: 1;
+        position: relative; 
+        margin-bottom:-5%;
+    }
 
     .hero h1 {
-        font-size: 7vw; /* Taille ajustée pour les petits écrans */
+        font-size: 8vw; /* Taille ajustée pour les petits écrans */
         margin-top: 5%; /* Remonte le titre */
         
     }
