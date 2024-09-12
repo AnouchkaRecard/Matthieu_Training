@@ -470,7 +470,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
     .square-image { 
-        margin-bottom:2vh;
+        margin-bottom:3vh;
        width: 15vh;
        height:auto;
        
@@ -480,7 +480,7 @@ h1, h2, h3, h4, h5, h6 {
     .cta-button {
         font-size: 1.5vw; /* Ajuste la taille du texte du bouton pour ces tablettes */
         padding: 1.5vh 4vw;
-        margin-top:-6.5vh;
+        margin-top:-8vh;
     }
 
   
