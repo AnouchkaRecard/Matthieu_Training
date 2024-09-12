@@ -433,7 +433,6 @@ h1, h2, h3, h4, h5, h6 {
 /* Responsive design pour mobile */
 @media (max-width: 725px) {
 
-.hero {margin-top: 10vh;}
 
     .hero .subtitle {
         font-size: 3.5vw; /* Ajuste la taille du sous-titre pour ces tablettes */
