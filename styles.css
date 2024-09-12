@@ -2461,7 +2461,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 6vw;
     color: #fff;
     text-transform: uppercase;
-    letter-spacing: 1em;
     text-shadow: 2px 22px 18px rgba(4,44,84); /* Ombre sur le texte */
     background-color: transparent; /* Fond transparent pour le titre */
     animation: slideInFromLeft 1.5s ease-out;
