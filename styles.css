@@ -409,7 +409,8 @@ h1, h2, h3, h4, h5, h6 {
    
     .hero {
         margin-top:17%;
-        height: 40vh; /* Ajuste la hauteur de la section pour les tablettes */
+        height: 41vh;
+        /* Ajuste la hauteur de la section pour les tablettes */
         padding: 0; /* Supprime le padding latéral */
     }
 
@@ -440,7 +441,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Responsive design pour mobile */
 @media (max-width: 725px) {
 
-
+.hero{        height: 50vh; /* Ajuste la hauteur de la section pour les tablettes */
+}
     .hero .subtitle {
         font-size: 3.5vw; /* Ajuste la taille du sous-titre pour ces tablettes */
         margin: 0 -2vw; /* Réduit les marges pour ces tablettes */
@@ -784,8 +786,8 @@ h1, h2, h3, h4, h5, h6 {
   
   @media only screen and (max-width: 768px) {
     .carte {
-        width: 85vw;
-        height: 60vw;
+        width: 65vw;
+        height: 40vw;
       margin: 0 3vw; /* Ajuste l'espacement latéral pour les cartes sur les petits écrans */
     }
 
