@@ -433,7 +433,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Responsive design pour mobile */
 @media (max-width: 725px) {
 
-.hero {margin-top: 13vh;}
+.hero {margin-top: 11vh;}
 
     .hero .subtitle {
         font-size: 3.5vw; /* Ajuste la taille du sous-titre pour ces tablettes */
@@ -2580,8 +2580,14 @@ h1, h2, h3, h4, h5, h6 {
     }
     .section-hero_2 h1 {
         font-size: 10vw;
+        margin-top: 25vh;
     }
 
+   .section-hero_2 {
+
+   
+    background-image: url('1youtube.png'); }
+   
     .text-background p {
         font-size: 4vw;
     }
@@ -2612,7 +2618,10 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     
+    .section-hero_2 {
 
+   
+        background-image: url('1youtube.png'); }
     .section-hero_4 h1 {
         font-size: 12vw;
         margin-bottom: 3%;
@@ -2626,7 +2635,7 @@ h1, h2, h3, h4, h5, h6 {
 
     .section-hero_2 h1 {
         font-size: 12vw;
-        margin-bottom: 5%;
+        margin-top: 30vh;
     }
 
     .text-background p {
