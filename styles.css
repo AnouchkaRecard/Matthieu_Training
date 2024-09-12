@@ -416,6 +416,7 @@ h1, h2, h3, h4, h5, h6 {
     .hero h1 {
         font-size: 10vw; /* Taille réduite pour les tablettes */
         margin-top: 1vh; /* Remonte le titre */
+        margin-bottom:0vh;
     }
 
     .hero .subtitle {
@@ -423,7 +424,7 @@ h1, h2, h3, h4, h5, h6 {
         margin: 0 0vw; /* Marges réduites pour les tablettes */
         z-index: 1;
         position: relative; 
-        margin-bottom:-5%;
+        margin-bottom:-3%;
     }
 
  
@@ -432,14 +433,14 @@ h1, h2, h3, h4, h5, h6 {
 /* Responsive design pour mobile */
 @media (max-width: 725px) {
 
-
+.hero {margin-top: 13vh;}
 
     .hero .subtitle {
         font-size: 3.5vw; /* Ajuste la taille du sous-titre pour ces tablettes */
         margin: 0 -2vw; /* Réduit les marges pour ces tablettes */
         z-index: 1;
         position: relative; 
-        margin-bottom: -3vh;
+        margin-bottom: -2vh;
     }
 
     .hero h1 {
@@ -469,7 +470,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
     .square-image { 
-        margin-bottom:7%;
+        margin-bottom:2vh;
        width: 15vh;
        height:auto;
        
