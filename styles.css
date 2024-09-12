@@ -276,9 +276,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Ajustements pour les grands écrans */
 .hero h1 {
-    font-size: 9vw; /* Taille du texte ajustée à la largeur de l'écran */
+    font-size: 7vw; /* Taille du texte ajustée à la largeur de l'écran */
     margin-bottom: 2vh;
-    margin-top:-10%;
     z-index: 2; /* Assure que le texte est au-dessus du carrousel */
     position: relative;
     color: rgba(252,116,68); /* Couleur du texte en rouge */
@@ -289,13 +288,14 @@ h1, h2, h3, h4, h5, h6 {
     2px 2px 0px rgb(4,44,84),   /* Ombre supplémentaire pour plus de profondeur */
     3px 3px 5px rgba(4,44,84, 0.7), /* Ombre floue pour l'effet 3D */
     0px 0px 20px rgba(4,44,84,  0.5); /* Effet lumineux autour du texte */
+    margin-top:-3%;
 }
 
 
 .hero .subtitle {
     font-size: 3vw; /* Taille légèrement plus petite pour le sous-titre */
     text-transform: uppercase; /* Met le texte en majuscules */
-    margin: 0 0vw; /* Marges plus grandes à gauche et à droite */
+    margin: 0 10vw; /* Marges plus grandes à gauche et à droite */
     text-shadow: 0.2vw 0.2vw 0.5vw black; /* Ombre noire pour le texte */
     z-index: 2; /* Assure que le sous-titre est au-dessus du carrousel */
     position: relative; 
@@ -325,8 +325,8 @@ h1, h2, h3, h4, h5, h6 {
 
     /* Styles pour l'image */
     .square-image {
-        width: 15vw; /* Ajustez la taille selon vos besoins */
-        height: auto; /* Assure que l'image est carrée */
+        width: 13vw; /* Ajustez la taille selon vos besoins */
+        height: 15vw; /* Assure que l'image est carrée */
         margin-bottom: -0.7vw; /* Superpose l'image sur le bouton */
         object-fit: cover; /* Assure que l'image est bien cadrée */
         z-index: 2; /* Assure que l'image est au-dessus du carrousel */
@@ -409,55 +409,30 @@ h1, h2, h3, h4, h5, h6 {
    
     .hero {
         margin-top:17%;
-        height: 41vh;
-        /* Ajuste la hauteur de la section pour les tablettes */
+        height: 40vh; /* Ajuste la hauteur de la section pour les tablettes */
         padding: 0; /* Supprime le padding latéral */
     }
 
     .hero h1 {
-        font-size: 10vw; /* Taille réduite pour les tablettes */
-        margin-top: 1vh; /* Remonte le titre */
-        margin-bottom:0vh;
+        font-size: 6vw; /* Taille réduite pour les tablettes */
+        margin-top: 2vh; /* Remonte le titre */
     }
 
-    .hero { font-size: 3.5vw; /* Taille réduite pour le sous-titre */
-        margin: 0 0vw; /* Marges réduites pour les tablettes */
-        z-index: 1;
-        position: relative; 
-        margin-top:12vh;/* ICI */
-    }
-        
-        .subtitle {
+    .hero .subtitle {
         font-size: 3.5vw; /* Taille réduite pour le sous-titre */
-        margin: 0 0vw; /* Marges réduites pour les tablettes */
+        margin: 0 5vw; /* Marges réduites pour les tablettes */
         z-index: 1;
         position: relative; 
-        margin-bottom:-3%;
+        margin-bottom:-5%;
     }
 
  
 }
 
 /* Responsive design pour mobile */
-@media (max-width: 725px) {
+@media (max-width: 480px) {
 
-.hero{        height: 50vh; /* Ajuste la hauteur de la section pour les tablettes */
-}
-    .hero .subtitle {
-        font-size: 3.5vw; /* Ajuste la taille du sous-titre pour ces tablettes */
-        margin: 0 -2vw; /* Réduit les marges pour ces tablettes */
-        z-index: 1;
-        position: relative; 
-        margin-bottom: -2vh;
-    }
-
-    .hero h1 {
-        font-size: 10vw; /* Taille réduite pour les tablettes */
-        margin: 0 0vw; /* Réduit les marges pour ces tablettes */
-        margin-top: -20vh; /* Remonte le titre */
-
-
-    }
+  
   
     .logo img { 
         height: 4vh; /* 6% de la hauteur de la fenêtre */
@@ -473,29 +448,52 @@ h1, h2, h3, h4, h5, h6 {
     margin-top:-2%;
 }
 
- 
-   
-
-
-    .square-image { 
-        margin-bottom:4vh;
-       width: 15vh;
-       height:auto;
-       
-        }
+    .hero {
+        height: 40vh; /* Réduit la hauteur pour mieux centrer le texte en mobile */
+        padding: 0; /* Supprime le padding latéral pour les petits écrans */
+        margin-top:18%;
     }
 
-    .cta-button {
-        font-size: 1.5vw; /* Ajuste la taille du texte du bouton pour ces tablettes */
-        padding: 1.5vh 4vw;
-        margin-top:-8vh;
+   
+
+    .hero .subtitle {
+        font-size: 4vw; /* Taille plus grande pour le sous-titre */
+        margin: 0 0vw; /* Marges plus grandes à gauche et à droite */
+        z-index: 1;
+        position: relative; 
+        margin-bottom:-5%;
     }
 
   
+}
 
-
-/* Responsive design pour tablettes spécifiques */
+/* Responsive design pour tablettes spécifiques IPAD AIR*/ 
 @media (min-width: 820px) and (max-width: 1024px) {
+
+    .carte {
+        width: 90vw;
+        height: 90vw;
+      }
+  
+      .discover-button {
+          font-size: 1em;
+          padding: 2em 1em;
+  
+  
+      }
+   
+      
+     
+    
+      .texte-carte {
+        font-size: 3vw;
+      }
+    
+      .sous-texte {
+        font-size: 2vw;
+      }
+      
+    
     .header {
         padding: 3vh 5vw; /* Garde le padding proportionnel */
     }
@@ -532,8 +530,17 @@ h1, h2, h3, h4, h5, h6 {
         margin-top: 15%; /* Ajuste le margin-top pour centrer le contenu */
     }
 
- 
- 
+    .hero h1 {
+        font-size: 5vw; /* Ajuste la taille du texte pour ces tablettes */
+        margin-top:6%;
+    }
+
+    .hero .subtitle {
+        font-size: 3vw; /* Ajuste la taille du sous-titre pour ces tablettes */
+        margin: 0 5vw; /* Réduit les marges pour ces tablettes */
+        z-index: 1;
+        position: relative; 
+    }
 
     
 }
@@ -735,7 +742,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: rotateY(0deg);
   }
   
-  @media only screen and (max-width: 1024px) {
+  /* @media only screen and (max-width: 1024px) {
     .carte {
       width: 40vw;
       height: 30vw;
@@ -759,7 +766,7 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 2vw;
     }
     
-  }
+  } */
   
   @media only screen and (max-width: 768px) {
     .carte {
@@ -786,8 +793,8 @@ h1, h2, h3, h4, h5, h6 {
   
   @media only screen and (max-width: 768px) {
     .carte {
-        width: 65vw;
-        height: 40vw;
+        width: 85vw;
+        height: 60vw;
       margin: 0 3vw; /* Ajuste l'espacement latéral pour les cartes sur les petits écrans */
     }
 
@@ -1858,9 +1865,16 @@ h1, h2, h3, h4, h5, h6 {
 /* Responsive Design */
 @media (max-width: 768px) {
 
-    
+    .square-image {
+        height: auto;
+        margin-top:-20%;
+    }
 
-  
+    .cta-button {
+        font-size: 1.5vw; /* Ajuste la taille du texte du bouton pour ces tablettes */
+        padding: 1.5vh 4vw;
+        margin-top:-15%;
+    }
     
 
     .cta-button_politiques {
@@ -2232,9 +2246,17 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Styles pour les mobiles */
 @media (max-width: 767px) {
-    
+    .square-image {
+        width: 15vw; /* Ajuste la taille de l'image pour ces tablettes */
+        height: auto;
+        margin-top:-8%;
+    }
 
-   
+    .hero h1 {
+        font-size: 7vw; /* Taille ajustée pour les petits écrans */
+        margin-top: 5%; /* Remonte le titre */
+        
+    }
     .contact-section h2{
         font-size: 2em;
     }
@@ -2245,9 +2267,9 @@ h1, h2, h3, h4, h5, h6 {
    
 
     .cta-button {
-        font-size: 3vw; /* Ajuste la taille du texte du bouton pour ces tablettes */
-        padding: 1vh 5vw;
-        margin-bottom : -80%;
+        font-size: 1.5vw; /* Ajuste la taille du texte du bouton pour ces tablettes */
+        padding: 1.5vh 4vw;
+        margin-top:-15%;
     }
 
     .cta-button_politiques {
@@ -2465,6 +2487,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 6vw;
     color: #fff;
     text-transform: uppercase;
+    letter-spacing: -0.05em;
     text-shadow: 2px 22px 18px rgba(4,44,84); /* Ombre sur le texte */
     background-color: transparent; /* Fond transparent pour le titre */
     animation: slideInFromLeft 1.5s ease-out;
@@ -2571,6 +2594,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Styles pour mobile */
 @media (max-width: 767px) {
 
+    .section-hero_2{        background-image: url(1youtube.png);
+}
     
     .section-hero h1 {
         font-size: 10vw;
@@ -2584,14 +2609,11 @@ h1, h2, h3, h4, h5, h6 {
     }
     .section-hero_2 h1 {
         font-size: 10vw;
-        margin-top: 25vh;
+        margin-top: 100%;
     }
 
-   .section-hero_2 {
+    
 
-   
-    background-image: url('1youtube.png'); }
-   
     .text-background p {
         font-size: 4vw;
     }
@@ -2611,7 +2633,14 @@ h1, h2, h3, h4, h5, h6 {
         width: 80%;
 
     }
+    .cta-button {
+       
+       
+        font-size: 2.5vw;
+        padding: 1vh 6vw;
+        width: 100%;
 
+    }
 }
 
 /* Styles pour tablette */
@@ -2622,10 +2651,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     
-    .section-hero_2 {
 
-   
-        background-image: url('1youtube.png'); }
     .section-hero_4 h1 {
         font-size: 12vw;
         margin-bottom: 3%;
@@ -2639,7 +2665,7 @@ h1, h2, h3, h4, h5, h6 {
 
     .section-hero_2 h1 {
         font-size: 12vw;
-        margin-top: 30vh;
+        margin-top: 105%;
     }
 
     .text-background p {
@@ -3499,6 +3525,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Ajustements pour les écrans plus petits (mobiles et tablettes) */
 @media (max-width: 768px) {
+    
 
     .social-icons {
         gap: 5vw; /* Augmente l'espace entre les icônes pour les plus petits écrans */
@@ -3564,7 +3591,9 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* Responsive Design */
+
 @media (max-width: 768px) {
+    
     .content-section {
         flex-direction: column;
         align-items: center;
