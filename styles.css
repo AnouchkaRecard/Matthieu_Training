@@ -143,7 +143,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Responsive design pour mobile */
 @media (max-width: 480px) {
-    
+    .square-image {
+        width: 30vw; /* Ajuste la taille de l'image pour ces tablettes */
+        height: auto;
+        margin-top:-8%;
+    }
     .menu-toggle {
         font-size: 1.5em; /* Réduit la taille du symbole */
     }
@@ -1446,15 +1450,15 @@ h1, h2, h3, h4, h5, h6 {
           }
           
           .bloc-blanc ul li {
-            font-size: 1.2vw; /* Ajuste la taille du texte */
-            color: #333;
+            color: rgba(4,44,84);
             margin-bottom: 1vw; /* Espace entre les éléments */
             position: relative; /* Positionne les puces correctement */
             padding-left: 0.5em; /* Ajoute de l'espace entre la puce et le texte */
           }
           
           .bloc-blanc ul li::marker {
-            color: #333; /* Assure la couleur des puces */
+                        color: rgba(4,44,84);
+ /* Assure la couleur des puces */
           }
           
          
@@ -1555,13 +1559,11 @@ h1, h2, h3, h4, h5, h6 {
         margin-top:5%;
     }
   
-    .bloc-blanc ul li {
-      font-size: 3.5vw;
-    }
+   
   }
   
   
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
     
   
     .bloc-infos {
@@ -1631,11 +1633,7 @@ h1, h2, h3, h4, h5, h6 {
 
   
   
-  .bloc-blanc ul li {
-    margin-bottom: 1.5vw;
-    font-size: 1.4vw;
-    color: #333;
-  }
+
   
   @keyframes fadeInLeft {
     from {
@@ -1660,7 +1658,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   /* Adaptation pour mobiles */
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
     
      .conteneur {
       flex-direction: column;
@@ -1678,9 +1676,7 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 4vw;
     }
   
-    .bloc-blanc ul li {
-      font-size: 3.5vw;
-    }
+  
   }
   
 
@@ -1880,12 +1876,9 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
 
-    .square-image {
-        height: auto;
-        margin-top:-20%;
-    }
+   
 
     .cta-button {
         font-size: 1.5vw; /* Ajuste la taille du texte du bouton pour ces tablettes */
@@ -2261,10 +2254,18 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+@media (width:412px) and (width:914px) {
+    .square-image {
+        width: 12vw; /* Ajuste la taille de l'image pour ces tablettes */
+        height: auto;
+        margin-top:-8%;
+    }
+    
+}
 /* Styles pour les mobiles */
 @media (max-width: 767px) {
     .square-image {
-        width: 20vw; /* Ajuste la taille de l'image pour ces tablettes */
+        width: 22vw; /* Ajuste la taille de l'image pour ces tablettes */
         height: auto;
         margin-top:-8%;
     }
@@ -2942,16 +2943,20 @@ h1, h2, h3, h4, h5, h6 {
 
     .text-column h2 {
         font-size : 5vw;}
-   
 
-    .bloc p, .text-du-block p,  .planification-sportive h2, .text-container,.text-du-block, .column p {
+        .bloc-blanc ul li { /*ICI*/
+            font-size: 2.5vw;
+          }
+          .text-block p {font-size: 1.5em;}
+
+    .bloc p, .text-du-block p,  .planification-sportive h2, .text-container, .text-du-block  ul li, .column p, .text-block_1 p {
         
 
         
             font-size: 1.5em; /* Ajuste la taille du titre pour les petits écrans */
             }
            
-            .text-du-block h2, .text-block h2, .text-block_1 h2
+            .text-du-block h2, .text-block h2, .text-block_1 h2, .text-block_1 h1
             { font-size:2.5em;
            }
 
@@ -3119,6 +3124,9 @@ h1, h2, h3, h4, h5, h6 {
 /* Styles pour les écrans de taille intermédiaire (tablettes) */
 @media (max-width: 1024px) {
 
+    .column p,  .bloc-blanc ul li { /*ICI 2*/
+        font-size: 3.5vw;
+      }
     .alert-section {
         min-height: 120px; /* Ajuste la hauteur minimale pour les tablettes */
         padding: 7% 0; /* Ajuste l'espacement pour les tablettes */
@@ -3617,7 +3625,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Responsive Design */
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     .content-section {
         flex-direction: column;
         align-items: center;
