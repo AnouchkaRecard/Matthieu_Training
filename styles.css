@@ -1178,7 +1178,7 @@ h1, h2, h3, h4, h5, h6 {
   .img_3 span {
     width: 25%;
     height: 100%;
-    background: url(test.jpg);
+    background: url(Edgar_300.jpg);
     transition: 0.5s;
     display: flex;
     justify-content: center;
@@ -1306,7 +1306,49 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.2vw;
     color: #333;
 }
+@media only screen and (max-width: 768px) {
 
+    .carte {
+        width: 80vw;
+        height: 60vw;
+      }
+  
+      .discover-button {
+          font-size: 1em;
+          padding: 2em 1em;
+  
+  
+      }
+   
+      
+     
+    
+      .texte-carte {
+        font-size: 6vw;
+      }
+    
+      .sous-texte {
+        font-size: 4vw;
+      }
+    .texte-principal {
+        font-size: 6vw;
+        
+        margin-top:-15%;
+        margin-bottom: 45%; /* Ajuste la position du texte pour les écrans plus petits */
+    }
+    .en-savoir-plus {
+        margin-bottom:-3%;
+        font-size: 2.5vw;}
+    
+  
+    .nom {
+        font-size: 3vw;
+    }
+
+    .avis {
+        font-size: 2vw;
+    }
+}
 @media only screen and (max-width: 1024px) {
 
     .carte {
@@ -1561,7 +1603,23 @@ h1, h2, h3, h4, h5, h6 {
   
    
   }
+  @media only screen and (max-width: 1024px) {
+    
   
+    .bloc-infos {
+      padding: 4vw;
+      margin-bottom:20%;
+      width: 90%;
+    }
+  
+    .nom {
+        font-size: 4vw;
+    }
+  
+    .avis {
+      font-size: 3vw;
+    }
+  }
   
   @media only screen and (max-width: 1024px) {
     
@@ -2167,6 +2225,28 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     position: relative; /* Ajout de la position relative */
   }
+
+  .img_2 span {
+   
+    background: url(moi_500.jpg);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Ajout de la position relative */
+  }
+  
+
+  .img_3 span {
+   
+    background: url(Edgar_500.jpg);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Ajout de la position relative */
+  }
+  
     .card {
         border-radius: 16px;
         width: 500px;
@@ -2195,11 +2275,7 @@ h1, h2, h3, h4, h5, h6 {
         box-shadow: 0 5px 50px rgba(0, 0, 0, 0.85);
       }
 
-    .square-image {
-        width: 20vw; /* Ajuste la taille de l'image pour ces tablettes */
-        height: auto;
-        margin-top:-10%;
-    }
+   
 
     .cta-button {
         font-size: 1.5vw; /* Ajuste la taille du texte du bouton pour ces tablettes */
@@ -2254,14 +2330,9 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-@media (width:412px) and (width:914px) {
-    .square-image {
-        width: 12vw; /* Ajuste la taille de l'image pour ces tablettes */
-        height: auto;
-        margin-top:-8%;
-    }
-    
-}
+
+
+
 /* Styles pour les mobiles */
 @media (max-width: 767px) {
     .square-image {
@@ -2368,7 +2439,6 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     width: 100%;
     height: 5vh; /* Taille ajustable selon le rendu souhaité */
-    background: linear-gradient(transparent, #f2f2f2); /* Gradient transparent vers la section suivante */
     box-shadow: 12px 12px 15px rgba(4, 44, 84, 0.7); /* Ombre subtile */
 
 }
@@ -2691,8 +2761,12 @@ h1, h2, h3, h4, h5, h6 {
 
     .section-hero_2 h1 {
         font-size: 12vw;
-        margin-top: 105%;
+        margin-top: 25%;
+           
+        
     }
+
+    
 
     .text-background p {
         font-size: 3vw;
@@ -3510,7 +3584,7 @@ h1, h2, h3, h4, h5, h6 {
         width: 100%;
     }
 
-    .bloc p, .text-du-block p, .text-block p, .text-block_1 p, .text-container,.text-du-block, .column p,.politiques_1 {
+    .bloc p, .text-du-block p, .text-du-block  ul li, .text-block p, .text-block_1 p, .text-container,.text-du-block, .column p,.politiques_1 {
         
 
         
@@ -3685,11 +3759,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-.text-du-block ul {
-    margin-left: 2em;
-    color: #2c3e50;
-    
-}
+
 
 
 
@@ -3732,6 +3802,7 @@ h1, h2, h3, h4, h5, h6 {
 
     .text-du-block ul {
         margin-left: 1em;
+        
     }
 
     .text-du-block {
