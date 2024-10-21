@@ -2416,6 +2416,23 @@ h1, h2, h3, h4, h5, h6 {
     
 }
 
+/* Adaptation pour mobile */
+@media (max-width: 768px) {
+    .section-hero {
+        margin-top: 19%; /* Ajustement spécifique pour les mobiles */
+        height: 50vh; /* Ajustez la hauteur pour les écrans mobiles */
+        background-attachment: scroll; /* Désactivez l'effet parallax pour les mobiles */
+    }
+}
+
+/* Adaptation pour tablette */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .section-hero {
+
+        height: 70vh; /* Ajustez la hauteur pour les écrans de tablette */
+        background-attachment: scroll; /* Vous pouvez garder l'effet parallax ou le désactiver selon vos préférences */
+    }
+}
 
 .section-hero_3 {
     margin-top:9%;
@@ -2443,6 +2460,23 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+@media (max-width: 768px) {
+    .section-hero_3 {
+        margin-top: 22%; /* Ajustement spécifique pour les mobiles */
+        height: 30vh; /* Ajustez la hauteur pour les écrans mobiles */
+        background-attachment: scroll; /* Désactivez l'effet parallax pour les mobiles */
+    }
+}
+
+/* Adaptation pour tablette */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .section-hero_3 {
+
+        height: 50vh; /* Ajustez la hauteur pour les écrans de tablette */
+        background-attachment: scroll; /* Vous pouvez garder l'effet parallax ou le désactiver selon vos préférences */
+    }
+}
+
 
 .section-hero_4.scrolled {
     transform: translateY(10%); /* Légère translation vers le bas */
@@ -2468,6 +2502,23 @@ h1, h2, h3, h4, h5, h6 {
     
 }
 
+@media (max-width: 768px) {
+    .section-hero_4 {
+        margin-top: 22%; /* Ajustement spécifique pour les mobiles */
+        height: 30vh; /* Ajustez la hauteur pour les écrans mobiles */
+        background-attachment: scroll; /* Désactivez l'effet parallax pour les mobiles */
+    }
+}
+
+/* Adaptation pour tablette */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .section-hero_4 {
+
+        height: 50vh; /* Ajustez la hauteur pour les écrans de tablette */
+        background-attachment: scroll; /* Vous pouvez garder l'effet parallax ou le désactiver selon vos préférences */
+    }
+}
+
 
 .section-hero_2.scrolled {
     transform: translateY(10%); /* Légère translation vers le bas */
@@ -2476,7 +2527,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-hero_2 { /*Animation podcast*/
     margin-top: 9%;
-    height: 75vh;
+    height: 83vh;
     background-image: url('youtube.png');
     background-size: cover;
     background-attachment: fixed; /* Fixe l'image de fond pour l'effet parallax */
@@ -2491,7 +2542,23 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+/* Adaptation pour mobile */
+@media (max-width: 768px) {
+    .section-hero_2 {
+        margin-top: 22%; /* Ajustement spécifique pour les mobiles */
+        height: 28vh; /* Ajustez la hauteur pour les écrans mobiles */
+        background-attachment: scroll; /* Désactivez l'effet parallax pour les mobiles */
+    }
+}
 
+/* Adaptation pour tablette */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .section-hero_2 {
+        
+        height: 60vh; /* Ajustez la hauteur pour les écrans de tablette */
+        background-attachment: scroll; /* Vous pouvez garder l'effet parallax ou le désactiver selon vos préférences */
+    }
+}
 
 /* Overlay pour assombrir l'image */
 .section-hero .overlay {
@@ -2690,8 +2757,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Styles pour mobile */
 @media (max-width: 767px) {
 
-    .section-hero_2{        background-image: url(1youtube.png);
-}
+    
     
     .section-hero h1 {
         font-size: 10vw;
@@ -2705,7 +2771,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     .section-hero_2 h1 {
         font-size: 10vw;
-        margin-top: 100%;
+        margin-top: 35%;
     }
 
     
@@ -2741,11 +2807,19 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Styles pour tablette */
 @media (min-width: 768px) and (max-width: 1024px) {
+
+    .section-hero, .section-hero_2, .section-hero_3, .section-hero_4{margin-top:13%;}
     .section-hero h1 {
-        font-size: 12vw;
+        margin-top:5%;
+        margin-bottom:-90%;
+        font-size: 10vw;
         margin-bottom: 3%;
     }
 
+    .overlay h1 {
+        margin-top:-4%;
+        margin-bottom:-1%;
+    }
     
 
     .section-hero_4 h1 {
@@ -2773,7 +2847,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .cta-button_2 {
-        margin-top: 10%;
+        margin-top: 2%;
 
         font-size: 3vw;
         padding: 2vh 5vw;
