@@ -905,361 +905,61 @@ h1, h2, h3, h4, h5, h6 {
 
 
 @import url('https://fonts.googleapis.com/css?family=Poppins');
-.cards-container {
+body {
+    font-family: 'Poppins', sans-serif; /* Application de la police Poppins */
+    background-color: #f9f9f9; /* Couleur d'arrière-plan pour contraster avec la carte */
+  }
+  
+  .cards-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center; /* Centrer les cartes */
     flex-wrap: wrap;
-    gap: 1px;
-    margin: 3%;
-    
+    margin: 20px; /* Marge autour du conteneur */
   }
   
   .card {
-    border-radius: 16px;
-    width: 300px;
-    height: 300px;
-    background: url(test1.jpg);
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 5px 50px rgba(0, 0, 0, 0.85);
+    width: 300px; /* Largeur de la carte */
+    border-radius: 16px; /* Coins arrondis */
+    background-color: white; /* Fond blanc */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    overflow: hidden; /* Masquer le débordement */
+    margin: 15px; /* Marge autour de la carte */
+    text-align: center; /* Centrer le texte */
   }
   
-  .card:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.92);
+  .card .image {
+    width: 100%; /* Largeur de l'image */
+    height: 300px; /* Hauteur de l'image */
+    background: url('IMG-20240910-WA000111_500.jpg') no-repeat center center; /* Image de fond */
+    background-size: cover; /* Couvrir tout l'espace de la section */
+    margin: 0; /* Supprimer la marge pour que l'image touche le bord */
   }
   
-  .img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
+  .card .content {
+    padding: 20px; /* Espacement interne */
+    position: relative; /* Pour garantir que le contenu soit au-dessus de l'image */
+    z-index: 1; /* Placer le contenu au-dessus de l'image */
+    margin-top: -10px; /* Ajustement pour remonter le contenu vers le haut */
   }
   
-  .img span {
-    width: 25%;
-    height: 100%;
-    background: url(IMG-20240910-WA000111.jpg);
-    transition: 0.5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative; /* Ajout de la position relative */
-  }
-
-  .img span::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.582);
-    z-index: 2;
+  .card .content h2 {
+    margin: 10px 0; /* Marge autour du titre */
+    font-size: 1.5em; /* Taille de la police */
+    color: #333; /* Couleur du texte */
   }
   
-  .img span:nth-child(1) {
-    background-position: 0;
-    transition-delay: 0s;
+  .card .content h3 {
+    margin: 5px 0; /* Marge autour du sous-titre */
+    color: #ff312d; /* Couleur rouge */
   }
   
-  .img span:nth-child(2) {
-    background-position: 33.33333%;
-    transition-delay: 0.1s;
-  }
-  
-  .img span:nth-child(3) {
-    background-position: 66.66666%;
-    transition-delay: 0.2s;
-  }
-  
-  .img span:nth-child(4) {
-    background-position: 100%;
-    transition-delay: 0.3s;
-  }
-  
-  .card:hover .img > span {
-    transform: translateY(-100%);
-  }
-  
-  .card:hover .content_1 {
-    transform: translateY(0%);
-    transition: 1s;
-    transition-delay: 0.1s;
-  }
-  
-  .content_1 {
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    padding: 20px 20px;
-    width: 100%;
-    height: 100%;
-    transform: translateY(100%);
-    z-index: 2;
-  }
-  
-  .content_1 h4 {
-    font-size: 0.7em;
-  }
-  
-  .img span p {
-    margin: 0;
-    color: white;
-    font-size: 4vw;
-    z-index: 2;
-    text-shadow: 
-      1px 1px 0px #000, 
-      2px 2px 0px #000, 
-      3px 3px 5px rgba(4, 44, 84, 0.7), 
-      0px 0px 20px rgba(4, 44, 84, 0.5);
+  .card .content h4 {
+    margin: 10px 0; /* Marge autour de la citation */
+    font-size: 0.9em; /* Taille de la police pour la citation */
+    color: #555; /* Couleur du texte */
   }
   
 
-/*image 2 */
-
-  
-  .card_2 {
-    border-radius: 16px;
-    width: 300px;
-    height: 300px;
-    background: url(test1.jpg);
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 5px 50px rgba(0, 0, 0, 0.85);
-  }
-  
-  .card_2:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.92);
-  }
-  
-  .img_2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-  }
-  
-  .img_2 span {
-    width: 25%;
-    height: 100%;
-    background: url(moi.jpg);
-    transition: 0.5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative; /* Ajout de la position relative */
-  }
-  
-  .img_2 span::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.582);
-    z-index: 2;
-  }
-  
-  .img_2 span:nth-child(1) {
-    background-position: 0;
-    transition-delay: 0s;
-  }
-  
-  .img_2 span:nth-child(2) {
-    background-position: 33.33333%;
-    transition-delay: 0.1s;
-  }
-  
-  .img_2 span:nth-child(3) {
-    background-position: 66.66666%;
-    transition-delay: 0.2s;
-  }
-  
-  .img_2 span:nth-child(4) {
-    background-position: 100%;
-    transition-delay: 0.3s;
-  }
-  
-  .card_2:hover .img_2 > span {
-    transform: translateY(-100%);
-  }
-  
-  .card_2:hover .content_1 {
-    transform: translateY(0%);
-    transition: 1s;
-    transition-delay: 0.1s;
-  }
-  
-  .content_1 {
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    padding: 20px 20px;
-    width: 100%;
-    height: 100%;
-    transform: translateY(100%);
-    z-index: 2;
-  }
-  
-  .content_1 h4 {
-    font-size: 0.8em;
-  }
-  
-  .img_2 span p {
-    margin: 0;
-    color: white;
-    font-size: 4vw;
-    z-index: 2;
-    text-shadow: 
-      1px 1px 0px #000, 
-      2px 2px 0px #000, 
-      3px 3px 5px rgba(4, 44, 84, 0.7), 
-      0px 0px 20px rgba(4, 44, 84, 0.5);
-  }
-  
-/*image 3 */
-.cards-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 1%;
-  }
-  
-  .card_3 {
-    border-radius: 16px;
-    width: 300px;
-    height: 300px;
-    background: url(test1.jpg);
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 5px 50px rgba(0, 0, 0, 0.85);
-  }
-  
-  .card_3:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.92);
-  }
-  
-  .img_3 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-  }
-  
-  .img_3 span {
-    width: 25%;
-    height: 100%;
-    background: url(Edgar_300.jpg);
-    transition: 0.5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative; /* Ajout de la position relative */
-  }
-  
-  .img_3 span::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.582);
-    z-index: 2;
-  }
-  
-  .img_3 span:nth-child(1) {
-    background-position: 0;
-    transition-delay: 0s;
-  }
-  
-  .img_3 span:nth-child(2) {
-    background-position: 33.33333%;
-    transition-delay: 0.1s;
-  }
-  
-  .img_3 span:nth-child(3) {
-    background-position: 66.66666%;
-    transition-delay: 0.2s;
-  }
-  
-  .img_3 span:nth-child(4) {
-    background-position: 100%;
-    transition-delay: 0.3s;
-  }
-  
-  .card_3:hover .img_3 > span {
-    transform: translateY(-100%);
-  }
-  
-  .card_3:hover .content_1 {
-    transform: translateY(0%);
-    transition: 1s;
-    transition-delay: 0.1s;
-  }
-  
-  .content_1 {
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    padding: 20px 20px;
-    width: 100%;
-    height: 100%;
-    transform: translateY(100%);
-    z-index: 2;
-  }
-  .content_1 h2 {
-    font-size: 1em;
-  }
-  .content_1 h4 {
-    font-size: 0.7em;
-  }
-  
-  .img_3 span p {
-    margin: 0;
-    color: white;
-    font-size: 4vw;
-    z-index: 2;
-    text-shadow: 
-      1px 1px 0px #000, 
-      2px 2px 0px #000, 
-      3px 3px 5px rgba(4, 44, 84, 0.7), 
-      0px 0px 20px rgba(4, 44, 84, 0.5);
-  }
-
-  /*fin */
   
 .texte-principal {
     font-size: 6vw; /* Ajuste la taille du texte */
@@ -2103,178 +1803,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Styles pour les tablettes (768px à 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
-.card:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.92);
-  }
-  
-  .img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-  }
-  
-  .img span {
-    width: 25%;
-    height: 100%;
-    background: url(IMG-20240910-WA000111.jpg);
-    transition: 0.5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative; /* Ajout de la position relative */
-  }
-
-  .img span::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.582);
-    z-index: 2;
-  }
-  
-  .img span:nth-child(1) {
-    background-position: 0;
-    transition-delay: 0s;
-  }
-  
-  .img span:nth-child(2) {
-    background-position: 33.33333%;
-    transition-delay: 0.1s;
-  }
-  
-  .img span:nth-child(3) {
-    background-position: 66.66666%;
-    transition-delay: 0.2s;
-  }
-  
-  .img span:nth-child(4) {
-    background-position: 100%;
-    transition-delay: 0.3s;
-  }
-  
-  .card:hover .img > span {
-    transform: translateY(-100%);
-  }
-  
-  .card:hover .content_1 {
-    transform: translateY(0%);
-    transition: 1s;
-    transition-delay: 0.1s;
-  }
-  
-  .content_1 {
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    padding: 20px 20px;
-    width: 100%;
-    height: 100%;
-    transform: translateY(100%);
-    z-index: 2;
-  }
-  .content_1 h2 {
-    font-size: 1.5em;
-  }
-  .content_1 h3 {
-    font-size: 1.7em;
-  }
 
   
-  .img span p {
-    margin: 0;
-    color: white;
-    font-size: 4vw;
-    z-index: 2;
-    text-shadow: 
-      1px 1px 0px #000, 
-      2px 2px 0px #000, 
-      3px 3px 5px rgba(4, 44, 84, 0.7), 
-      0px 0px 20px rgba(4, 44, 84, 0.5);
-  }
-
-.img span {
-   
-    background: url(IMG-20240910-WA000111_500.jpg);
-    transition: 0.5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative; /* Ajout de la position relative */
-  }
-
-  .img_2 span {
-   
-    background: url(moi_500.jpg);
-    transition: 0.5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative; /* Ajout de la position relative */
-  }
-
-  .img_2 span {
-   
-    background: url(moi_500.jpg);
-    transition: 0.5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative; /* Ajout de la position relative */
-  }
-  
-
-  .img_3 span {
-   
-    background: url(Edgar_500.jpg);
-    transition: 0.5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative; /* Ajout de la position relative */
-  }
-  
-    .card {
-        border-radius: 16px;
-        width: 500px;
-        height: 500px;
-        background: url(test1.jpg);
-        position: relative;
-        overflow: hidden;
-        box-shadow: 0 5px 50px rgba(0, 0, 0, 0.85);
-      }
-      .card_2 {
-        border-radius: 16px;
-        width: 500px;
-        height: 500px;
-        background: url(test1.jpg);
-        position: relative;
-        overflow: hidden;
-        box-shadow: 0 5px 50px rgba(0, 0, 0, 0.85);
-      }
-      .card_3 {
-        border-radius: 16px;
-        width: 500px;
-        height: 500px;
-        background: url(test1.jpg);
-        position: relative;
-        overflow: hidden;
-        box-shadow: 0 5px 50px rgba(0, 0, 0, 0.85);
-      }
-
+ 
    
 
     .cta-button {
