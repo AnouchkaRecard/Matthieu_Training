@@ -2555,7 +2555,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 768px) and (max-width: 1024px) {
     .section-hero_2 {
         
-        height: 60vh; /* Ajustez la hauteur pour les écrans de tablette */
+        height: 50vh; /* Ajustez la hauteur pour les écrans de tablette */
         background-attachment: scroll; /* Vous pouvez garder l'effet parallax ou le désactiver selon vos préférences */
     }
 }
