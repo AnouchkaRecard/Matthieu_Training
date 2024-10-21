@@ -1961,7 +1961,7 @@ body {
     .section-hero {
         height: 70vh; /* Ajustez la hauteur pour les écrans de tablette */
         background-attachment: scroll; /* Gardez l'effet parallax ou désactivez-le selon vos préférences */
-        background-size: cover; /* Assurez-vous que l'image de fond couvre toute la section */
+        background-size: contain; /* Assurez-vous que l'image de fond couvre toute la section */
         background-position: center; /* Centrez l'image de fond */
     }
 
