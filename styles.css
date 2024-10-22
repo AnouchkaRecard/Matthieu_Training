@@ -118,8 +118,6 @@ h1, h2, h3, h4, h5, h6 {
 /* Responsive design pour tablette et mobile */
 @media (max-width: 768px) {
 
-   
-    
     .menu-toggle {
         display: block;
     }
@@ -142,7 +140,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Responsive design pour mobile */
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
     .square-image {
         width: 30vw; /* Ajuste la taille de l'image pour ces tablettes */
         height: auto;
@@ -267,7 +265,6 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(45deg, #43cea2, #185a9d);
     color: white;
     padding: 0 5vw; /* Ajoute du padding latéral pour l'espacement */
     animation: fadeIn 1.5s ease-in-out;
@@ -1958,12 +1955,7 @@ body {
 
 /* Adaptation pour tablette */
 @media (min-width: 768px) and (max-width: 1024px) {
-    .section-hero {
-        height: 70vh; /* Ajustez la hauteur pour les écrans de tablette */
-        background-attachment: scroll; /* Gardez l'effet parallax ou désactivez-le selon vos préférences */
-        background-size: contain; /* Assurez-vous que l'image de fond couvre toute la section */
-        background-position: center; /* Centrez l'image de fond */
-    }
+
 
     .overlay {
         display: flex; /* Utilisez flexbox pour centrer le contenu */
@@ -1987,6 +1979,12 @@ body {
     }
 }
 
+/* Show <br> tag only on desktop */
+@media (min-width: 1024px) {
+    desktop-only {
+        display: block;
+    }
+}
 
 
 .section-hero_3 {
