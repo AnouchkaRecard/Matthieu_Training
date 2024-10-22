@@ -193,6 +193,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 100%; /* Assure que les images couvrent toute la hauteur du carousel */
     object-fit: cover; /* Maintient le ratio tout en couvrant le conteneur */
+    box-shadow: 12px 12px 15px rgba(4, 44, 84, 0.7); /* Ombre subtile */
+
 }
 
 /* Responsive design pour téléphone */
@@ -271,7 +273,6 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     overflow: hidden; /* Empêche les images de déborder */
     margin-top:8%;
-    box-shadow: 12px 12px 15px rgba(4, 44, 84, 0.7); /* Ombre subtile */
 
 }
 
