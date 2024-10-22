@@ -1,48 +1,89 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+  <head>
+    <!-- Charset et Viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil - Matthieu Training</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
+  
+    <!-- Meta title -->
+    <title> Accueil - Matthieu Training | Coaching & Performance pour Athlètes</title>
+  
+    <!-- Meta description -->
+    <meta name="description" content="Optimisez vos performances sportives avec un suivi personnalisé. Coaching professionnel pour marathon, triathlon, cyclisme, musculation, et plus encore. Pour tous niveaux, du débutant à l'expert. Suivi individuel adapté à vos objectifs et à votre discipline sportive.">
+  
+    <!-- Meta keywords -->
+    <meta name="keywords" content="suivi sportif personnalisé, coaching sportif, performance athlète, préparation physique, triathlon, cyclisme, course à pied, marathon, musculation, fitness, suivi individuel, nutrition sportive, réathlétisation, programme d'entraînement, sport de haut niveau, coach en ligne, accompagnement athlète, plan d'entraînement, récupération sportive, amélioration des performances, entraînement sportif personnalisé, optimisation physique, préparation mentale, endurance, sport santé, bien-être, athlétisme, crossfit, trail running, ski, natation, basket-ball, sports extrêmes">
+  
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.matthieu-training.fr/suivi-sportif-personnalise">
+  
+    <!-- Favicon (différentes tailles pour compatibilité) -->
+    <!-- Favicon standard -->
+    <link rel="icon" href="Matthieu_Andreux-modified.png" type="image/png">
+    
+    <!-- Apple touch icon (iPhone, iPad) -->
+    <link rel="apple-touch-icon" href="Matthieu_Andreux-modified.png" sizes="180x180">
+    
+    <!-- Android (tablettes et téléphones) -->
+    <link rel="icon" href="Matthieu_Andreux-modified.png" sizes="192x192" type="image/png">
+    
+    <!-- Favicon pour Microsoft (Windows 8/10) -->
+    <meta name="msapplication-TileImage" content="Matthieu_Andreux-modified.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    
+    <!-- Favicon 32x32 pour navigateurs -->
+    <link rel="icon" type="image/png" sizes="32x32" href="Matthieu_Andreux-modified.png">
+    
+    <!-- Favicon 16x16 pour navigateurs -->
+    <link rel="icon" type="image/png" sizes="16x16" href="Matthieu_Andreux-modified.png">
+  
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Matthieu - Training" />
+    <meta property="og:description" content="Manager de performances. Rejoins la team ici !" />
+    <meta property="og:image" content="Matthieu_Andreux-modified.png" />
+    <meta property="og:url" content="https://www.matthieu-training.fr" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Matthieu - Training" />
+  
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Matthieu - Training" />
+    <meta name="twitter:description" content="Description de votre site" />
+    <meta name="twitter:image" content="Matthieu_Andreux-modified.png" />
+  
+    <!-- Robots (indexation par les moteurs de recherche) -->
+    <meta name="robots" content="index, follow">
+  
+    <!-- Langue du site -->
+    <meta http-equiv="Content-Language" content="fr">
   
     <!-- Lien vers la librairie Slick -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
     <link rel="stylesheet" href="styles.css">
-
-      <!-- Favicon pour les navigateurs -->
-      <link rel="icon" href="Matthieu_Andreux-modified.png" type="image/x-icon">
-      
-      <!-- Favicon pour les navigateurs modernes et autres appareils -->
-      <link rel="icon" href="Matthieu_Andreux-modified.png" type="image/png">
-      
-      <!-- Favicon pour les appareils Apple (si vous utilisez une image PNG de 180x180 pixels) -->
-      <link rel="apple-touch-icon" href="Matthieu_Andreux-modified.png">
-      
-      <!-- Favicon pour les appareils Android et les autres plateformes -->
-      <link rel="icon" sizes="192x192" href="Matthieu_Andreux-modified.png">
-      
-
   
-      <!-- Open Graph Meta Tags -->
-      <meta property="og:title" content="Matthieu - Training " />
-      <meta property="og:description" content="Manager de performances. Rejoins la team ici !" />
-      <meta property="og:image" content="Matthieu_Andreux-modified.png" />
-      <meta property="og:url" content="URL_de_votre_site" />
-      <meta property="og:type" content="website" />
-      <meta property="og:site_name" content="Matthieu - Training" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   
-      <!-- Twitter Card Meta Tags (si vous souhaitez aussi personnaliser l'aperçu pour Twitter) -->
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="Matthieu - Training" />
-      <meta name="twitter:description" content="Description de votre site" />
-      <meta name="twitter:image" content="Matthieu_Andreux-modified.png" />
-      <meta name="twitter:site" content="@votre_compte_twitter" />
-
-  
+    <!-- Données structurées Schema.org (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "Matthieu Training",
+      "url": "https://www.matthieu-training.fr",
+      "logo": "https://www.matthieu-training.fr/Matthieu_Andreux-modified.png",
+      "description": "Suivi sportif personnalisé pour atteindre vos objectifs : préparation physique, triathlon, course à pied, nutrition.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+33-683-964-956",
+        "contactType": "Customer Service",
+        "areaServed": "FR"
+      }
+    }
+    </script>
 </head>
+
+  
 <body>
     <header class="header">
         <div class="logo">
@@ -275,7 +316,7 @@
     <div class="container">
         <div class="column photo-column">
             <img src="photo podcast.png" alt="Dynamique Step Podcast"
-">
+>
         </div>
         
         <div class="column text-column">
