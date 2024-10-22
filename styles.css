@@ -1744,7 +1744,7 @@ body {
 /* Section Contact */
 .contact-container h2 {
     font-size: 2.2vw; /* Utilise des unités relatives pour la taille du texte */
-    margin-bottom: 4vh;
+    margin-bottom:4vh;
     background: linear-gradient(1deg,rgba(255, 49, 49, 1),rgba(255, 145, 77)  );
     -webkit-background-clip: text; /* Appliquer le dégradé au texte */
     -webkit-text-fill-color: transparent; /* Masquer la couleur de texte d'origine */
