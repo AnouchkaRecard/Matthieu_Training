@@ -453,7 +453,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
     .hero {
-        height: 20vh; /* Réduit la hauteur pour mieux centrer le texte en mobile */
         padding: 0; /* Supprime le padding latéral pour les petits écrans */
         margin-top:18%;
     }
@@ -523,7 +522,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .hero {
-        height: 40vh; /* Ajuste la hauteur de la section hero pour ces tablettes */
+        height: 20vh; /* Ajuste la hauteur de la section hero pour ces tablettes */
         padding: 0; /* Supprime le padding latéral */
         margin-top: 15%; /* Ajuste le margin-top pour centrer le contenu */
     }
