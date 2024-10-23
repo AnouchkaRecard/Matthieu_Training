@@ -415,6 +415,8 @@ h1, h2, h3, h4, h5, h6 {
     .hero {
         margin-top:17%;
         padding: 0; /* Supprime le padding latéral */
+        box-shadow: 0px 0px 0px rgba(4, 44, 84, 0.7); /* Ombre subtile */
+
     }
 
     .hero h1 {
