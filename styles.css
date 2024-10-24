@@ -187,15 +187,12 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     z-index: 0;
     overflow: hidden; /* Assure que rien ne dépasse du carrousel */
-    box-shadow: 12px 12px 15px rgba(4, 44, 84, 0.7); /* Ombre subtile */
 }
 
 .carousel img {
     width: 100%;
     height: 100%; /* Assure que les images couvrent toute la hauteur du carousel */
     object-fit: cover; /* Maintient le ratio tout en couvrant le conteneur */
-    box-shadow: 12px 12px 15px rgba(4, 44, 84, 0.7); /* Ombre subtile */
-
 }
 
 /* Responsive design pour téléphone */
@@ -274,7 +271,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     overflow: hidden; /* Empêche les images de déborder */
     margin-top:8%;
-    box-shadow: 12px 12px 15px rgba(4, 44, 84, 0.7); /* Ombre subtile */"
+    box-shadow: 12px 12px 15px rgba(4, 44, 84, 0.7); /* Ombre subtile */
 
 }
 
@@ -453,6 +450,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
     .hero {
+        height: 40vh; /* Réduit la hauteur pour mieux centrer le texte en mobile */
         padding: 0; /* Supprime le padding latéral pour les petits écrans */
         margin-top:18%;
     }
@@ -522,7 +520,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .hero {
-        height: 20vh; /* Ajuste la hauteur de la section hero pour ces tablettes */
+        height: 40vh; /* Ajuste la hauteur de la section hero pour ces tablettes */
         padding: 0; /* Supprime le padding latéral */
         margin-top: 15%; /* Ajuste le margin-top pour centrer le contenu */
     }
@@ -1740,7 +1738,6 @@ body {
     .contact-container {
         margin: 0 auto;
         max-width: 1200px; /* Largeur maximale sur PC */
-        margin-bottom:5%;
     }
 }
 
